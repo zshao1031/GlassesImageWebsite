@@ -1,0 +1,271 @@
+/*置中用容器*/
+.location__container{
+    width: 1110px;
+    margin: 0 auto;
+
+    @include pc1200{
+        max-width: 92.5%;
+    }
+}
+
+
+/*==============================*/
+/*下拉式選單區域*/
+.selector{
+    padding-top: 16px;
+    margin-bottom: 32px;
+
+    @include pad991{
+        padding-top: 8px;
+        margin-bottom: 24px;
+    }
+
+    @include phone575{
+        margin-bottom: 20px;
+    }
+
+}
+
+/*下拉式選單標籤*/
+.selector__label{
+    font-size: 24px;
+    font-weight: $fw_regular;
+    line-height: 30px;
+    color: $fc_primary_b;
+    margin-right: 20px;
+
+    @include pad991{
+        font-size: 16px;
+    }
+
+    @include phone575{
+        font-size: 14px;
+    }
+}
+
+/*下拉式選單主體*/
+.selector__select{
+    width: 324px;
+    height: 45px;
+    padding-left: 19px;
+    font-size: 18px;
+    font-weight: $fw_regular;
+    line-height: 24px;
+
+    &:hover{
+        border: 2px solid $border_hover_color;
+    }
+
+    @include pad991{
+        width: 237px;
+        height: 46px;
+    }
+
+    @include phone575{
+        width: 80%;
+
+    }
+}
+
+/*==============================*/
+/*門市列表*/
+.locationList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 272px;
+
+    @include pad991{
+        margin-bottom: 84px;
+    }
+
+    @include phone575{
+        margin-bottom: 40px;
+    }
+
+}
+
+/*門市物件*/
+.locationList__item{
+    width: 31.5%;
+    margin-right: 1.8%;
+    margin-bottom: 32px;
+
+    @include pad991{
+        width: 48%;
+        margin-right: 2%;
+        margin-bottom: 20px;
+    }
+
+    @include phone575{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+
+/*門市照片*/
+.locationList__item__photo{
+    height: 224px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @include pad991{
+        height: 164px;
+    }
+}
+
+
+/*門市標題名稱*/
+.locationList__item__title{
+    padding: 12px 24px;
+    font-size: 24px;
+    font-weight: $fw_regular;
+    line-height: 36px;
+    color: $fc_primary_b;
+    border: 1px solid $bd_primary_g;
+
+    @include pad991{
+        padding: 8px 16px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/*==============================*/
+/*門市資訊列表*/
+.locationList__item__infoList{
+    padding: 16px 24px;
+    border: 1px solid $bd_primary_g;
+
+    @include pad991{
+        padding: 16px;
+    }
+}
+
+/*門市各行資訊*/
+.locationList__item__infoItem{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+
+    &.last-mb{
+        margin-bottom: 0px;
+    }
+}
+
+/*門市資訊的小icon*/
+.location__item__infoItem__icon{
+    padding-top: 4px;
+    margin-right: 12px;
+
+    @include pad991{
+        padding-top: 0px;
+        margin-right: 16px;
+    }
+}
+
+/*門市資訊的文字內容*/
+.location__item__infoItem__text{
+    font-size: 20px;
+    font-weight: $fw_regular;
+    line-height: 30px;
+    color: $fc_primary_b;
+
+    @include pad991{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+/*詳細資訊按鈕*/
+.location__item__btn{
+    display: block;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: $fw_regular;
+    line-height: 26px;
+    text-align: center;
+    color: $fc_primary_w;
+    background: $bg_secondary_b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid $bd_primary_g;
+
+    &:hover{
+        background: $bg_primary_r_dark;
+    }
+
+    @include pad991{
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+/*==============================*/
+/*門市詳細資料*/
+.locationList.locationDetail{
+    justify-content: space-between;
+    align-items: center;
+
+    .locationList__item{
+        width: 40%;
+
+        @include pad991{
+            width: 100%;
+            margin-right: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+        }
+
+        @include phone575{
+            margin-bottom: 16px;
+            display: block;
+        }
+    }
+
+    .locationList__item__photo{
+        @include pad991{
+            width: 48%;
+        }
+
+        @include phone575{
+            width: 100%;
+        }
+    }
+
+    .locationList__item__infoArea{
+        @include pad991{
+            width: 48%;
+        }
+
+        @include phone575{
+            width: 100%;
+        }
+    }
+
+
+    /*Google地圖*/
+    .locationList__item__map{
+        width: 57.2%;
+        height: 422px;
+        overflow: hidden;
+        margin-bottom: 32px;
+
+        @include pad991{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        @include phone575{
+            margin-bottom: 16px;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,81 @@
+/*【通用設定】*/
+
+/*使padding與border不會增加總寬度*/
+*,*:before,*:after{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/*字型設定*/
+body{
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+}
+
+/*使圖片不會在下方多出2~3px空間*/
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*================================================*/
+/*banner背景圖*/
+.banner{
+    height: 304px;
+    background-image: url(../images/FAQ/72.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @include pc1200{
+        background-position: -350px;
+    }
+
+    @include phone767{
+        background-position: -430px;
+    }
+
+    @include phone575{  
+        height: 143px;
+        background-position: -90px;
+    }
+}
+
+/*背景圖中的容器，用來固定標題位置*/
+.banner__container{
+    width: 1110px;
+    height: 304px;
+    margin: 0 auto;
+    position: relative;
+
+    @include pc1200{
+        max-width: 92.5%;
+    }
+
+    @include phone575{    
+        height: 143px;
+    }
+}
+
+/*banner標題區*/
+.banner__titleArea{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.banner__titleArea__title{
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: $fw_bold;
+    margin-right: 24px;
+
+    @include phone767{
+        font-size: 48px;
+        line-height: 80px;
+    }
+}
+

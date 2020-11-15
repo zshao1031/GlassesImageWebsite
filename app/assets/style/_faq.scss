@@ -1,0 +1,95 @@
+//置中用容器
+.faq__container{
+    width: 1110px;
+    margin: 0 auto;
+    padding-top: 80px;
+    
+    @include pc1200{
+        max-width: 92.5%;
+    }
+
+    @include phone767{
+        padding-top: 40px;
+    }
+
+    @include phone575{
+        padding-top: 24px;
+    }
+}
+
+
+.faq__title{
+    font-size: 32px;
+    line-height: 63px;
+    font-weight: $fw_bold;
+    margin-bottom: 36px;
+
+    @include phone575{
+        margin-bottom: 12px;        
+    }
+}
+
+//與footer的推擠
+.faq__questionList{
+    margin-bottom: 304px;
+
+    @include phone767{
+        margin-bottom: 104px;        
+    }
+
+    @include phone575{
+        margin-bottom: 56px;        
+    }
+}
+
+
+.faq__questionList__question{
+    
+    h4{
+        font-size: 20px;
+        font-weight: $fw_bold;
+        color: $fc_primary_b;
+        line-height: 23px;
+        margin-bottom: 16px;
+
+        @include phone575{
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 8px;        
+        }
+    }
+
+    p{
+        line-height: 24px;
+        font-weight: $fw_regular;
+        margin-left: 90px;
+        margin-bottom: 40px;
+
+        @include phone767{
+            margin-left: 60px;
+            margin-bottom: 40px;
+        }
+
+        @include phone575{
+            font-size: 14px;
+            line-height: 21px;
+            margin-left: 0px;
+            margin-bottom: 20px;  
+        }
+    }
+
+    .p-mb{
+        margin-bottom: 0px;
+
+        @include phone575{
+            margin-bottom: 20px;
+        }
+    }
+
+    .last-mb{
+        margin-bottom: 0px;
+    }
+}
+
+
+

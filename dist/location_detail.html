@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!--頁籤設定-->
+  <title>門市據點細節</title>
+  <link rel="icon" href="./assets/images/favicon.ico">
+
+  <!--網站描述與關鍵字設定-->
+	<meta name="description" content="此網站為書豪參加六角學院秋季切版班的第四週作品">
+	<meta name="keywords" content="HexSchool, GlassesImageWebsite, Week4">
+
+  <!--載入google fonts的Roboto字體-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!--載入CSS-->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+    <!--表頭區-->
+    <header class="header">
+        <!--Logo-->
+        <h1 class="header__flexItem">
+            <a href="index.html" alt="logo圖" class="header__logo">logo</a>
+        </h1>
+        <!--表頭選單-->
+        <ul class="header__menuList header__flexItem">
+            <li class="header__menuList__flexItem"><a href="#" class="header__menuList__btn">系列鏡框</a></li>
+            <li class="header__menuList__flexItem"><a href="location.html" class="header__menuList__btn">門市據點</a></li>
+            <li class="header__menuList__flexItem"><a href="#" class="header__menuList__btn">部落格</a></li>
+            <li class="header__menuList__flexItem"><a href="FAQ.html" class="header__menuList__btn">常見問題</a></li>
+        </ul>
+    </header>
+
+    <!--gulp自動填入各頁內容-->
+    
+<!--中央內容-->
+<main class="main">
+
+    <!--Banner區-->
+    <div class="banner">
+        <!--Banner中的容器-->
+        <div class="banner__container">
+            <div class="banner__titleArea">
+                <h2 class="banner__titleArea__title banner__titleArea__flexItem">門市據點</h2>
+                <img src="assets/images/location/iconfinder_location_1585851.svg" alt="問號圖示" class="banner__titleArea__icon banner__titleArea__flexItem">
+            </div>        
+        </div>
+    </div>
+
+    <!--門市據點-->
+    <div class="location__container">
+        <!--下拉式選單-->
+        <div class="selector">
+            <label for="locationSelector" class="selector__label">選擇地區</label>
+            <select name="shop" id="locationSelector" class="selector__select">
+                <option value="台北市中山旗艦店" selected>台北市中山旗艦店</option>
+                <option value="台北市信義旗艦店">台北市信義旗艦店</option>
+                <option value="台北市萬華旗艦店">台北市萬華旗艦店</option>
+                <option value="台北市士林旗艦店">台北市士林旗艦店</option>
+            </select>
+        </div>
+        <!--門市細節列表-->
+        <ul class="locationList locationDetail">
+            <li class="locationList__item locationList__flexItem">
+                <div class="locationList__item__photo" style="background-image: url(./assets/images/location/locate1.jpeg)"></div>
+                <div class="locationList__item__infoArea">
+                    <h4 class="locationList__item__title">台北市中山旗艦店</h4>
+                    <ul class="locationList__item__infoList">
+                        <li class="locationList__item__infoItem">
+                            <img src="assets/images/location/tel_icon.svg" alt="電話ICON" class="location__item__infoItem__icon">
+                            <p class="location__item__infoItem__text">電話：(02)000-1234</p>
+                        </li>
+                        <li class="locationList__item__infoItem">
+                            <img src="assets/images/location/time_icon.svg" alt="營業時間ICON" class="location__item__infoItem__icon">
+                            <p class="location__item__infoItem__text">營業時間：10:00-21:00</p>
+                        </li>
+                        <li class="locationList__item__infoItem last-mb">
+                            <img src="assets/images/location/address_icon.svg" alt="地址ICON" class="location__item__infoItem__icon">
+                            <p class="location__item__infoItem__text">地址：台北市中山區南京東路25巷2-1號</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="locationList__item__map locationList__flexItem">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4653782388423!2d121.53571001540077!3d25.05221114371432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf93d4d97b%3A0xa1e26471ae5697b8!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1605397068053!5m2!1szh-TW!2stw" width="991" height="465" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </li>
+        </ul>
+    </div>
+
+</main>
+
+    <!--表尾區-->
+    <footer class="footer">
+        <!--框範圍置中的容器-->
+        <div class="footer__container">
+            <!--聯絡資訊區-->
+            <div class="footer__contact">
+                <div class="footer__contact__aside footer__contact__flexItem">
+                    <!--表尾選單-->
+                    <ul class="footer__menuList">
+                        <li class="footer__menuList__flexItem"><a href="index.html" class="footer__menuList__btn">首頁</a></li>
+                        <li class="footer__menuList__flexItem"><a href="#" class="footer__menuList__btn">系列錶框</a></li>
+                        <li class="footer__menuList__flexItem"><a href="location.html" class="footer__menuList__btn">門市據點</a></li>
+                        <li class="footer__menuList__flexItem"><a href="#" class="footer__menuList__btn">部落格</a></li>
+                        <li class="footer__menuList__flexItem"><a href="FAQ.html" class="footer__menuList__btn">常見問題</a></li>
+                    </ul>
+                    <!--聯絡資訊-->
+                    <ul class="footer__contact__info">
+                        <li class="tel">                        
+                            <a href="tel:0800000000" class="info"><img src="assets/images/layout/local_phone-24px.svg" alt="電話Icon" class="icon">0800-000-000</a>
+                        </li>
+                        <li class="mail">    
+                            <a href="mailto:glasses@business.com" class="info"><img src="assets/images/layout/mail_outline-24px.svg" alt="信箱Icon" class="icon"> glasses@business.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--社群網站連結-->
+                <ul class="footer__snsList footer__contact__flexItem">
+                    <li class="footer__snsList__flexItem"><a href="https://www.facebook.com/" alt="Facebook連結圖片" class="footer__snsList__btn footer__snsList__fbIcon"></a></li>
+                    <li class="footer__snsList__flexItem"><a href="https://www.instagram.com/" alt="Instagram連結圖片" class="footer__snsList__btn footer__snsList__igIcon"></a></li>
+                    <li class="footer__snsList__flexItem"><a href="http://official-blog.line.me/tw/" alt="Line連結圖片" class="footer__snsList__btn footer__snsList__lineIcon"></a></li>
+                </ul>
+            </div>
+            <!--版權聲明區-->
+            <div class="copyRightsArea">
+                <ul class="copyRights__textList copyRightsArea__flexItem">
+                    <li class="copyRights__textList__flexItem"><img src="assets/images/layout/logo.png" alt="Logo圖" class="copyRights__textList__logo"></li>
+                    <li class="copyRights__textList__text copyRights__textList__flexItem">Copyright © 2020 Glasses.All rights reserved.</li>
+                </ul>
+                <ul class="copyRights__linksList copyRightsArea__flexItem">
+                    <li class="copyRights__linksList__privacyPolicy copyRights__linksList__flexItem"><a href="index.html" class="copyRights__linksList__privacyPolicy__link">隱私權政策</a></li>
+                    <li class="copyRights__linksList__TermsOfService copyRights__linksList__flexItem"><a href="index.html" class="copyRights__linksList__TermsOfService__link">服務條款</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
